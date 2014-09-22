@@ -1,7 +1,9 @@
 module CalculadoraBasica where
 
-soma :: Int -> Int -> Int
-soma x y = (+) x y
+soma x y = x + y
+
+soma2 :: Int -> Int -> Int
+soma2 x y = (+) x y
 
 subtracao :: Int -> Int -> Int
 subtracao x y = (-) x y
