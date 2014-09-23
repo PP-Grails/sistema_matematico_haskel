@@ -3,7 +3,7 @@ import CalculadoraBasica
 import CalculadoraCientifica
 import CalculadoraFinanceira
 import Geometria
-import JogoMatematico
+import Jogo
 import Fisica
 import System.IO
 
@@ -22,6 +22,7 @@ menu = do { putStrLn "Menu principal\n";
         putStrLn "2 - Exponenciacao";
         putStrLn "3 - Dicas de matematica";
 	putStrLn "4 - Cadastre uma Dica de matematica";
+	putStrLn "5 - Jogo da Matematica";
         opcao <- getLine;
         case opcao of 
 	      "1" -> do { putStrLn "Opcao Somar escolhida";	
@@ -41,5 +42,6 @@ menu = do { putStrLn "Menu principal\n";
 	      "4" -> do { putStrLn "Cadastro de Dicas de Matematica";
 			  todoItem <- getLine;
 			  appendFile "dicas.txt" ("\n" ++ todoItem ++ "\n"); 
-			}		     
+			}
+              "5" -> do { jogoMatematico }		     
              }

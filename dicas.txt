@@ -7,3 +7,5 @@ DICAS
 (senta A, coça B – senta B, coça A)
 - sen(A+B) = senA.cosB + senB.cosA
 (senta A, coça B + senta B, coça A)
+
+soma 5 + 1 = 6
